@@ -1,29 +1,312 @@
   
- <style>
-{sets the default style for the body, table data, list data, divisions and text areas}
-{ body, well you know what that is}
-{ p, and xmp are classes}
-{ table, tr, td, and th are table properties}
-body,p,xmp,table,tr,td,th
-{background-color:000000 ;}
-</style>
+ <!DOCTYPE html>
+<html>
 
 
+
+
+
+
+
+
+
+
+
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-{"Help" and "Signout" in very top in right corner,last line important}
-a.man,a:link,a:active,a:visited{font-family:ARIAL; font-size:9pt;color:959595; text-decoration:none;}
-a:hover{font-family:ARIAL; 
-font-size:10pt;color:666666; text-decoration:none;border-bottom:;}
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 </style>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Sarah Slurpie</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="My WOrld "><i class="fa fa-globe"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Contact info"><i class="fa fa-user"></i></a>
+  <a href="emailto:sarahslurpie@yahoo.com" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Message Me"><i class="fa fa-envelope"></i></a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="#" class="w3-bar-item w3-button">OOOh you thought you got a notification!</a>
+      <a href="#" class="w3-bar-item w3-button">I see you rawr !</a>
+      <a href="#" class="w3-bar-item w3-button">you can be on my top 8 </a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
 </div>
 
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Sarah Slurpie</h4>
+         <p class="w3-center"><img src="https://i.ibb.co/YBvnp4W/slurpie.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> SLurpinator</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Social Media, Earth</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> 2019</p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> Follow</button>
+          <div id="Demo1" class="w3-hide w3-container">
+            <p>here sucka!</p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Look what I found this week!</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p>Random fun !</p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> INSTAGRAM</button>
+          <div id="Demo3" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+		 
+         <br>
+           <div class="w3-half">
+             <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>Interests</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">Your Life</span>
+            <span class="w3-tag w3-small w3-theme-d4">The universe</span>
+            <span class="w3-tag w3-small w3-theme-d3">Blueberries</span>
+            <span class="w3-tag w3-small w3-theme-d2">cold weather</span>
+            <span class="w3-tag w3-small w3-theme-d1">me</span>
+            <span class="w3-tag w3-small w3-theme">Games</span>
+            <span class="w3-tag w3-small w3-theme-l1">myself</span>
+            <span class="w3-tag w3-small w3-theme-l2">INSTAGRAM</span>
+            <span class="w3-tag w3-small w3-theme-l3">Design</span>
+            <span class="w3-tag w3-small w3-theme-l4">Art</span>
+            <span class="w3-tag w3-small w3-theme-l5">social</span>
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>Scroll to the bottom to join my live video chat room ! Hopefully Ill see you there! </p>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity"></h6>
+              <p contenteditable="true" class="w3-border w3-padding">Status: Being dope asf</p>
+              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>Sarah Doe</h4><br>
+        <hr class="w3-clear">
+        <p>OKAY !<br><Br><Br><br><br><br><br><br><br><br><br><br><bR><br><br><br><br><br><br><br><br><br><br><br></p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="/w3images/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">16 min</span>
+        <h4>Jane Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>  
 
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>SUPPP</h4><br>
+        <hr class="w3-clear">
+        <p>Have you seen this?</p>
+        <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+      
+	  
+	  
+	  
+	  
+	  <script type="text/javascript">var ezcapechat_room="sarahslurpie", ezcapechat_width="900px", ezcapechat_height="650px";</script><script src="https://www.ezcapechat.com/embed/room.js"></script><div id="ezcapechat_chat"></div>
+	  
+	  
+	  
+	  
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
+          <p><strong>Holiday</strong></p>
+          <p>STay Tuned Hookers!</p>
+          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Friend Request</p>
+          <img src="/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
+          <span>Slurpie Derpy</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+        <p>MUAH!</p>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
 
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 w3-padding-16">
+  <h5>Later Gator!</h5>
+</footer>
 
-<div class="bg" style="position: absolute; left:610px; top:348px; width:1100px; height:870px; overflow: hidden;"><a>
+<footer class="w3-container w3-theme-d5">
+  <p>Sarah Slurpie <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">.2019.</a></p>
+</footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
 
-<img src="" border="0" alt="Photobucket" /></a></div>
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html> 
+
 
 
 
@@ -46,7 +329,7 @@ font-size:10pt;color:666666; text-decoration:none;border-bottom:;}
 
 
 
-.pics{position: relative; top: -100px; right: -340px; width:550px; border: none;}
+.pics{position: relative; top: -2740px; right: -340px; width:550px; border: none;}
 
 .pic1{position: relative; height: 333px; width: 100px; overflow: hidden; background-image: url(https://i1.wp.com/jobloving.com/wp-content/uploads/2017/11/work-quote-fuck-youvery-much.jpg?w=696
 );  background-position: 0 0; border: 1 solid 000000; margin: 5px; -moz-border-radius: 15px; border-radius: 15px; }
@@ -63,7 +346,7 @@ font-size:10pt;color:666666; text-decoration:none;border-bottom:;}
 
 .name{padding-right: 680px;}
 
-.box{position: relative; top: -65px; right: -20px; width: 270px; height: 850px; margin: 5px; -moz-border-radius: 25px; border-radius: 15px; background-image: linear-gradient(pink, black);
+.box{position: relative; top: -2060px; right: -20px; width: 270px; height: 850px; margin: 5px; -moz-border-radius: 25px; border-radius: 15px; background-image: linear-gradient(pink, black);
 }
 
 
@@ -101,8 +384,8 @@ position: relative; top: -280px; right: 40px; width:400px; height: 245px; border
  .roll {
     position: relative;
     overflow: hidden;
-    top: 30px;
-	right:25;
+    top: -130px;
+	right:525;
 	
 	
 } 
@@ -118,7 +401,11 @@ position: relative; top: -280px; right: 40px; width:400px; height: 245px; border
 	}
 
 
-
+.soundcloud {position: absolute; position: relative;
+overflow: hidden;
+top: -2051px;
+right:-25px;
+}
 
  
 </style>
@@ -153,12 +440,9 @@ position: relative; top: -280px; right: 40px; width:400px; height: 245px; border
 
 
 
+<div class="soundcloud">
 
-
-<iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/696935511&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&sho" width="20%" height="100" scrolling="no" frameborder="no" allow="autoplay" ></iframe></div>
-
-
-
+<iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/696935511&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&sho" width="20%" scrolling="no" frameborder="no" allow="autoplay" ></iframe></div>
 
 
 
@@ -178,7 +462,10 @@ position: relative; top: -280px; right: 40px; width:400px; height: 245px; border
 
 
 
-<div name="about" style="position: relative; top: -950px; left: 190px; width:90px; height: 40px; border: none; font-family: tahoma;  font-size: 5x; text-align: justify;">Click the Pic to the left to enter my Live video Chat room! Make sure to enable flash to see the room <br>
+
+
+
+<div name="about" style="position: relative; top: -2980px; left: 190px; width:90px; height: 50px; border: none; font-family: tahoma;  font-size: 5x; text-align: justify;">Click the Pic to the left to enter my Live video Chat room! Make sure to enable flash to see the room <br>
 Hope 2 see you there ! </div>   
 
 
@@ -190,7 +477,7 @@ Hope 2 see you there ! </div>
 
 
 
-<div name="twitter" style="position: relative; top:-850px; left:40px;">
+<div name="twitter" style="position: relative; top:-2870px; left:30px;">
 
 <a href="https://twitter.com/intent/tweet?screen_name=SarahSlurpie&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @SarahSlurpie</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
@@ -198,7 +485,9 @@ Hope 2 see you there ! </div>
 
 
 
-
+<div name="roll" style="position: relative; top:-2620px; left:30px;">
+    <iframe class="roll" 
+<iframe width="260" height="350" frameborder="0"  marginheight="0" marginwidth="0" allowtransparency="true" src="https://chatroll.com/embed/chat/dyfr?id=AQorDYYN_AH&platform=html"></iframe></div>
 
 
 
@@ -283,9 +572,7 @@ overflow: auto; width: 440px; height:320px;color:000000; font-size:10pt; font-we
 
 
 
-<div class="bg">
-    <iframe class="roll" 
-<iframe width="420" height="310" frameborder="0"  marginheight="0" marginwidth="0" allowtransparency="true" src="https://chatroll.com/embed/chat/dyfr?id=AQorDYYN_AH&platform=html"></iframe>
+
 
 
 
@@ -348,13 +635,10 @@ overflow: hidden; width: 141px; height:137px;color:FFFFFF; font-size:10pt; font-
 
 
 
-<div style="width:70%;height:90px;padding-bottom:60%;position:relative; top:-520; left:-680;"><iframe src="https://giphy.com/embed/1zKRbqUmytgKKjTqtY" width="100%" height="100%" style="position:absolute" frameBorder="0" class= allowFullScreen></iframe></div><p></a></p>
 
 
 
 
-
-<div style="overflow:hidden; width:65%;height:300px;padding-bottom:60%;position:relative; top:-970; left:-300;"><iframe src="https://lh3.googleusercontent.com/-LrQkbBVwnzv7tE_0eH1oP0hqxeq5tJ-FsRY1H7dIaHjR_N8V1FCBEO0IlVSRsmYgC5ct7wlca7qg4M4FI5-xWrJmyUCPhGi15L6zf_ugRubZcpIXHx9lbgDwf3qPbsQny-fvEqjjdyWlSh_v9-w0k7oulB3kKXB7ZW9ieJlb-HL0nxK6aLRnSZjwORS9LwuUXXIPJxq27WL-H2mPHkBZRt_ilYY4EfI6iQowqvjc0MO5p-GP5yu5GHeQYxP39uyRtILvo3IM30iZn7JFJWKely0t7kSjmdc11PXochQBTK69xLUFm5vhpVfCAclj4H8PSSKV1RUti7-cd_O0QTXvUUrRo5QPD-NiFTfFN1BZWuV5yX6f4S4cIQuFn9RxI0nJTz4t_Mk6eBHlOO-AzIio7JQ47TtXiD2Z7EBpFmTqwcLbwvsQSR1qeOYDmmzM9jFFxuo1cS1azAV6XRRc8Ef1nnHEPtBN50XgRjaXNgqYpWWXYvjLsXS34wZhVwQh5alTrzoQ6hz5uJwc765_LAmEgjgTvRvJ33xFG22sus-Ur82eyX4O6gsp43x7T1gv-u4YckOxLVZsMrMjYJcz3i94W56-DRWXfLKmXAe7FE9F1dUokNtg3a5FFm6eUNoUl8qa2plViUsTySNlkJXk3RcsO-dIRFE9rIeP8-Ae0gVsD94Apd1K5AUaWqVpdNOpz1ae2UsksGjBmcGG40IUsZeAvAv=w267-h543-no" width="100%" height="100%" style="position:absolute" frameBorder="0" class= allowFullScreen></iframe></div><p></a></p>
 
 
 
@@ -484,7 +768,7 @@ SaraHS Online
 
 
 
-<script type="text/javascript">var ezcapechat_room="sarahslurpie", ezcapechat_width="900px", ezcapechat_height="650px";</script><script src="https://www.ezcapechat.com/embed/room.js"></script><div id="ezcapechat_chat"></div>
+
 
 
 
@@ -505,5 +789,3 @@ overflow: hidden; width: 352px; height:20px;color:000000; font-size:10pt; font-w
 </div>
 </div>
    
-
- 
