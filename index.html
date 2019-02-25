@@ -1,372 +1,160 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
 <html>
-
-
-
-
-
-
-
-
-
-
-
-<title></title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
 <style>
-html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
-</style>
-<body class="w3-theme-l5">
+* {
+  box-sizing: border-box;
+}
 
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Sarah Slurpie</a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="My WOrld "><i class="fa fa-globe"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Contact info"><i class="fa fa-user"></i></a>
-  <a href="emailto:sarahslurpie@yahoo.com" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Message Me"><i class="fa fa-envelope"></i></a>
-  <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-      <a href="#" class="w3-bar-item w3-button">OOOh you thought you got a notification!</a>
-      <a href="#" class="w3-bar-item w3-button">I see you rawr !</a>
-      <a href="#" class="w3-bar-item w3-button">you can be on my top 8 </a>
-    </div>
-  </div>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
-    <img src="/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
-  </a>
- </div>
-</div>
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
 
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
-</div>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
 
-<!-- Page Container -->
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
-  <!-- The Grid -->
-  <div class="w3-row">
-    <!-- Left Column -->
-    <div class="w3-col m3">
-      <!-- Profile -->
-      <div class="w3-card w3-round w3-white">
-        <div class="w3-container">
-         <h4 class="w3-center">Sarah Slurpie</h4>
-         <p class="w3-center"><img src="https://i.ibb.co/YBvnp4W/slurpie.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
-         <hr>
-         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> SLurpinator</p>
-         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Social Media, Earth</p>
-         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> 2019</p>
-        </div>
-      </div>
-      <br>
-      
-      <!-- Accordion -->
-      <div class="w3-card w3-round">
-        <div class="w3-white">
-          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> Follow</button>
-          <div id="Demo1" class="w3-hide w3-container">
-            <p>here sucka!</p>
-          </div>
-          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Look what I found this week!</button>
-          <div id="Demo2" class="w3-hide w3-container">
-            <p>Random fun !</p>
-          </div>
-          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> INSTAGRAM</button>
-          <div id="Demo3" class="w3-hide w3-container">
-         <div class="w3-row-padding">
-		 
-         <br>
-           <div class="w3-half">
-             <img src="/w3images/lights.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="/w3images/mountains.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="/w3images/forest.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-           <div class="w3-half">
-             <img src="/w3images/snow.jpg" style="width:100%" class="w3-margin-bottom">
-           </div>
-         </div>
-          </div>
-        </div>      
-      </div>
-      <br>
-      
-      <!-- Interests --> 
-      <div class="w3-card w3-round w3-white w3-hide-small">
-        <div class="w3-container">
-          <p>Interests</p>
-          <p>
-            <span class="w3-tag w3-small w3-theme-d5">Your Life</span>
-            <span class="w3-tag w3-small w3-theme-d4">The universe</span>
-            <span class="w3-tag w3-small w3-theme-d3">Blueberries</span>
-            <span class="w3-tag w3-small w3-theme-d2">cold weather</span>
-            <span class="w3-tag w3-small w3-theme-d1">me</span>
-            <span class="w3-tag w3-small w3-theme">Games</span>
-            <span class="w3-tag w3-small w3-theme-l1">myself</span>
-            <span class="w3-tag w3-small w3-theme-l2">INSTAGRAM</span>
-            <span class="w3-tag w3-small w3-theme-l3">Design</span>
-            <span class="w3-tag w3-small w3-theme-l4">Art</span>
-            <span class="w3-tag w3-small w3-theme-l5">social</span>
-          </p>
-        </div>
-      </div>
-      <br>
-      
-      <!-- Alert Box -->
-      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
-        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
-          <i class="fa fa-remove"></i>
-        </span>
-        <p><strong>Hey!</strong></p>
-        <p>Scroll to the bottom to join my live video chat room ! Hopefully Ill see you there! </p>
-      </div>
-    
-    <!-- End Left Column -->
-    </div>
-    
-    <!-- Middle Column -->
-    <div class="w3-col m7">
-    
-      <div class="w3-row-padding">
-        <div class="w3-col m12">
-          <div class="w3-card w3-round w3-white">
-            <div class="w3-container w3-padding">
-              <h6 class="w3-opacity"></h6>
-              <p contenteditable="true" class="w3-border w3-padding">Status: Being dope asf</p>
-              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">1 min</span>
-        <h4>Sarah Doe</h4><br>
-        <hr class="w3-clear">
-        <p>OKAY !<br><Br><Br><br><br><br><br><br><br><br><br><br><bR><br><br><br><br><br><br><br><br><br><br><br></p>
-          <div class="w3-row-padding" style="margin:0 -16px">
-            <div class="w3-half">
-              <img src="" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
-            </div>
-            <div class="w3-half">
-              <img src="/w3images/nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
-          </div>
-        </div>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
-      </div>
-      
-      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="/w3images/avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">16 min</span>
-        <h4>Jane Doe</h4><br>
-        <hr class="w3-clear">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
-      </div>  
+.header h1 {
+  font-size: 50px;
+}
 
-      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-        <img src="/w3images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <span class="w3-right w3-opacity">32 min</span>
-        <h4>SUPPP</h4><br>
-        <hr class="w3-clear">
-        <p>Have you seen this?</p>
-        <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
-      </div> 
-      
-	  
-	  
-	  
-	  
-	  <script type="text/javascript">var ezcapechat_room="sarahslurpie", ezcapechat_width="900px", ezcapechat_height="650px";</script><script src="https://www.ezcapechat.com/embed/room.js"></script><div id="ezcapechat_chat"></div>
-	  
-	  
-	  
-	  
-    <!-- End Middle Column -->
-    </div>
-    
-    <!-- Right Column -->
-    <div class="w3-col m2">
-      <div class="w3-card w3-round w3-white w3-center">
-        <div class="w3-container">
-          <p>Upcoming Events:</p>
-          <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
-          <p><strong>Holiday</strong></p>
-          <p>STay Tuned Hookers!</p>
-          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
-        </div>
-      </div>
-      <br>
-      
-      <div class="w3-card w3-round w3-white w3-center">
-        <div class="w3-container">
-          <p>Friend Request</p>
-          <img src="/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
-          <span>Slurpie Derpy</span>
-          <div class="w3-row w3-opacity">
-            <div class="w3-half">
-              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
-            </div>
-            <div class="w3-half">
-              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br>
-      
-      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
-        <p>MUAH!</p>
-      </div>
-      <br>
-      
-      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
-        <p><i class="fa fa-bug w3-xxlarge"></i></p>
-      </div>
-      
-    <!-- End Right Column -->
-    </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-<!-- End Page Container -->
-</div>
-<br>
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
-<!-- Footer -->
-<footer class="w3-container w3-theme-d3 w3-padding-16">
-  <h5>Later Gator!</h5>
-</footer>
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-<footer class="w3-container w3-theme-d5">
-  <p>Sarah Slurpie <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">.2019.</a></p>
-</footer>
- 
-<script>
-// Accordion
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-theme-d1";
-  } else { 
-    x.className = x.className.replace("w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}    
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
   }
 }
 
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
 }
-</script>
-
-</body>
-</html> 
 
 
 
 
 
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- <style> 
- 
-.pics{position: relative; top: -2740px; right: -340px; width:550px; border: none;}
-.pic1{position: relative; height: 333px; width: 100px; overflow: hidden; background-image: url(https://i1.wp.com/jobloving.com/wp-content/uploads/2017/11/work-quote-fuck-youvery-much.jpg?w=696
-);  background-position: 0 0; border: 1 solid 000000; margin: 5px; -moz-border-radius: 15px; border-radius: 15px; }
+
+
+
+
+
+.pics{position: relative; top: -25px; right: -50px; width:550px; border: none;}
+
+.pic1{position: relative; height: 333px; width: 100px; overflow: hidden; background-image: url(https://i1.wp.com/jobloving.com/wp-content/uploads/2017/11/work-quote-fuck-youvery-much.jpg?w=696);  background-position: 0 0; border: 1 solid 000000; margin: 5px; -moz-border-radius: 15px; border-radius: 15px; }
+
 .pic2{position: relative; height: 333px; width: 100px; overflow: hidden; background-image: url(https://i1.wp.com/jobloving.com/wp-content/uploads/2017/11/work-quote-fuck-youvery-much.jpg?w=696);  background-position: 400 0; border: 1 solid 000000; margin: 5px; -moz-border-radius: 15px; border-radius: 15px; }
+
 .pic3{position: relative; height: 333px; width: 100px; overflow: hidden; background-image: url(https://i1.wp.com/jobloving.com/wp-content/uploads/2017/11/work-quote-fuck-youvery-much.jpg?w=696);  background-position: 300 0; border: 1 solid 000000; margin: 5px; -moz-border-radius: 15px; border-radius: 15px; }
+
 .pic4{position: relative; height: 333px; width: 100px; overflow: hidden; background-image: url(https://i1.wp.com/jobloving.com/wp-content/uploads/2017/11/work-quote-fuck-youvery-much.jpg?w=696);  background-position: 200 0; border: 1 solid 000000; margin: 5px; -moz-border-radius: 15px; border-radius: 15px; }
+
 .pic5{position: relative; height: 333px; width: 100px; overflow: hidden; background-image: url(https://i1.wp.com/jobloving.com/wp-content/uploads/2017/11/work-quote-fuck-youvery-much.jpg?w=696);  background-position: 100 0; border: 1 solid 000000;; margin: 5px; -moz-border-radius: 15px; border-radius: 15px; }
-.title{position: relative; top: -105px; right: -120px; width: 1000px; height: 10px; margin: 5px; -moz-border-radius: 5px; border-radius: 5px; background-color: 039090;  }
-.name{padding-right: 680px;}
-.box{position: relative; top: -1400px; right: -20px; width: 270px; height: 850px; margin: 5px; -moz-border-radius: 25px; border-radius: 15px; background-image: linear-gradient(pink, black);
-}
-.abouttitle{ position: relative; top: 3px; left: 20px; text-align: left; font-family: Georgia; text-transform: lowercase; font-size:2em; color: 039090;}
-.about{
-position: relative; top: -280px; right: 40px; width:400px; height: 245px; border: none; font-family: tahoma;  font-size: 8x; text-align: justify; overflow-x: hidden;  overflow-y: 
-}
-.resp-iframe {
-    position: relative;
-    overflow: hidden;
-    top:100;
-	left:0;
-	
-} 
+
+
+
+
  
  
  
- 
- .roll {
-    position: relative;
-    overflow: hidden;
-    top: -90px;
-	right:525;
-	
-	
-} 
- 
-.banner { position: absolute;  position: relative;
-    overflow: hidden;
-    top: 30px;
-	right:25;
-	}
-.soundcloud {position: absolute; position: relative;
+ .soundcloud {position: absolute; position: relative;
 overflow: hidden;
 top: -2421px;
 right:-25px;
 }
+
+
+ .chatrollroll {
+    position: relative;
+    overflow: hidden;
+    top: -20px;
+	right:-25;
+	
+	
+} 
+ 
+ 
+ 
+ 
+ 
+
+
 </style>
 
 
@@ -375,31 +163,73 @@ right:-25px;
 
 
 
-<div class="pics"><textarea class="pic1"></textarea><textarea class="pic2"></textarea><textarea class="pic3"></textarea><textarea class="pic4"></textarea><textarea class="pic5"></textarea></div>
+</style>
+</head>
+<body>
 
-<div class="title"><span class="name">
-
-            
-</span></div>
-
-<div class="box">
-<span class="abouttitle">Video Chat Room!
-</span><br />
-
-
-
-<div class="chat">
-<script class="text/javascript">var id=9895,clup="?optional?",clhov="?optional?";</script><script src="https://www.ezcapechat.com/embed/icon.js"></script></div></span><br/>
-
-
+<div class="header">
+  <h1>Sarah Slurpie</h1>
+  
+  
+  
+  <p><div class="pics"><textarea class="pic1"></textarea><textarea class="pic2"></textarea><textarea class="pic3"></textarea><textarea class="pic4"></textarea><textarea class="pic5"></textarea></div></p>
+  
+  
+  
+  
+  <p>Hey Hookers !</p>
 </div>
 
+<div class="topnav">
+  <a href="https://www.facebook.com/sarahslurpie">Facebook</a>
+  <a href="https://www.instagram.com/sarah.slurpie/">Instagram</a>
+  <a href="mailto:sarahslurpie@yahoo.com">Email Me</a>
+  <a href="https://medium.com/@sarahslurpie/forever-the-book-cover-1b7d57e5da26">Medium Blog</a>
+  <a href="https://sarahslurpie.blogspot.com/">Blogger</a>
+  <a href="https://www.youtube.com/channel/UClMfHYloCo-jjTYLiYs8cYw?view_as=subscriber">Youtube</a>
+  <a href="https://twitter.com/SarahSlurpie">TwiTTER</a>
+ <a href="https://www.facebook.com/SarahSlurpieOnline/">
+SaraHS Online</a> 
+  
+  <a href="#" style="float:right">Link</a>
+</div>
 
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>Sarah Slurpie</h2>
+      <h5>THey Hookers!</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Scroll to the bottom to enter my Live Video chat room</p>
+      <p>MUAHS</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;"> 
+        </div>
+      </div>
+      <br>
+	  
+	  
 
-
-
-<div class="soundcloud">
+<div class="soundcloud" style="position: relative; top:-100px; left:30px;">
 <iframe width="20%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/567469650&color=%23d97cd5&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+	  
+	  
+	  
+	  </div>
+	  
+	  
+	  
 
 
 
@@ -417,12 +247,6 @@ right:-25px;
 
 
 
-
-
-
-
-
-<div name="about" style="position: relative; top: -2980px; left: 190px; width:90px; height: 50px; border: none; font-family: tahoma;  font-size: 5x; text-align: justify;"> </div>   
 
 
 
@@ -441,253 +265,66 @@ right:-25px;
 
 
 
-<div name="roll" style="position: relative; top:-2930px; left:30px;">
+<div name="roll" style="position: relative; top:-650px; left:900px;">
     <iframe class="roll" 
 <iframe width="260" height="350" frameborder="0"  marginheight="0" marginwidth="0" allowtransparency="true" src="https://chatroll.com/embed/chat/dyfr?id=AQorDYYN_AH&platform=html"></iframe></div>
 
-
-
-
-
-
- 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
-
-
-<div style="position:absolute; top: 500px; left:860px;
-overflow: hidden; width: 240px; height:310px;color:FFFFFF; font-size:10pt; font-weight:normal; font-family:ARIAL; text-align:center; background-color: TRANSPARENT; background-image: 
- 
-    ); background-position:center; background-repeat:no-repeat; border:1px solid TRANSPARENT;"> 
-
-<font color="#959595"><b>Sarah Slurpie
-
-<br>
-<br>
-<br>
-
-
+	  
+	  
+	  
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
     
+	
+	
+	
+		  
+
+
+</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+	
+	
+	
+	
+	
+	
+    <div class="card">
+      <h3>Follow Me</h3>
+	  <p>
+
+<a href="https://twitter.com/intent/tweet?screen_name=SarahSlurpie&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @SarahSlurpie</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></p>
 
 
 
-
-
-<br />
-
-<br />
-..
-<br />
-<br />
-
-
-
-
-
-
-
-
-
-
-</font>
-</style>
+      <p><script type="text/javascript">var ezcapechat_room="sarahslurpie", ezcapechat_width="900px", ezcapechat_height="650px";</script><script src="https://www.ezcapechat.com/embed/room.js"></script><div id="ezcapechat_chat"></div></p>
+    </div>
+  </div>
 </div>
 
-
-<div style="position:absolute; top: 730px; left:700px; scrolling: "no";
-overflow: auto; width: 440px; height:320px;color:000000; font-size:10pt; font-weight:normal; font-family:ARIAL; text-align:center; background-color: TRANSPARENT; background-image: 
- 
-    ); background-position:center; background-repeat:no-repeat; border:1px solid TRANSPARENT;"> 
-
-<font color="#959595">
-<br />
-
-
-
-
-<br />
-<br />
-
-
-
-
-
-
-
-
-
-
-
-</font>
-</style>
+<div class="footer">
+  <h2>Footer</h2>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div style="position:absolute; top: 280px; left:305px;
-overflow: hidden; width: 141px; height:137px;color:FFFFFF; font-size:10pt; font-weight:normal; font-family:ARIAL ITALIC; text-align:center; background-color: TRANSPARENT; background-image: 
- 
-    ); background-position:center; background-repeat:no-repeat; border:1px solid TRANSPARENT;"> 
-
-<br />
-
-</a>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div style="position:absolute; top: 150px; left:90px;
-overflow: hidden; width: 112px; height:24px;color:000000; font-size:10pt; font-weight:bold; font-family:ARIAL NARROW; text-align:center; background-color:TRANSPARENT; background-image: url({URL_TO_IMAGE}  
-    ); background-position:center; background-repeat:no-repeat; border:1px solid TRANSPARENT; "> 
-<a href="https://www.facebook.com/sarahslurpie" class="nava">FACEBOOK</a>
-
-</a>
-</div>
-</div>
-
-
-
-
-<div style="position:absolute; top: 180px; left:90px;
-overflow: hidden; width: 112px; height:20px;color:000000; font-size:10pt; font-weight:bold; font-family:ARIAL NARROW; text-align:center; background-color:TRANSPARENT; background-image: url({URL_TO_IMAGE}  
-    ); background-position:center; background-repeat:no-repeat; border:1px solid TRANSPARENT; "> 
-<div class="instagram"><form method="instagram" action=""><a href="https://www.instagram.com/sarah.slurpie/">
-INSTAGRAM
-</a>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div style="position:absolute; top: 210px; left:90px;
-overflow:hidden; width: 112px; height:20px;color:000000; font-size:10pt; font-weight:bold; font-family:ARIAL NARROW; text-align:center; background-color:TRANSPARENT; background-image: url({URL_TO_IMAGE}  
-    ); background-position:center; background-repeat:no-repeat; border:1px solid TRANSPARENT; "> 
-<div class="email"><form method="email" action=""><a href="mailto:sarahslurpie@yahoo.com">
-Send me EMAIL!
-</a>
-</div>
-</div>
-
-<div style="position:absolute; top: 240px; left:90px;
-overflow: hidden; width: 112px; height:20px;color:000000; font-size:10pt; font-weight:bold; font-family:ARIAL NARROW; text-align:center; background-color:TRANSPARENT; background-image: url({URL_TO_IMAGE}  
-    ); background-position:center; background-repeat:no-repeat; border:1px solid TRANSPARENT; "> 
-<div class="medium"><form method="medium" action=""><a href="https://medium.com/@sarahslurpie/forever-the-book-cover-1b7d57e5da26">
-Medium Blogs
-</a>
-</div>
-</div>
-
-<div style="position:absolute; top: 270px; left:90px;
-overflow: hidden; width: 112px; height:20px;color:000000; font-size:10pt; font-weight:bold; font-family:ARIAL NARROW; text-align:center; background-color:TRANSPARENT; background-image: url({URL_TO_IMAGE}  
-    ); background-position:center; background-repeat:no-repeat; border:1px solid TRANSPARENT; "> 
-<div class="blogger"><form method="blogger" action=""><a href="https://sarahslurpie.blogspot.com/">
-BLoGGEr
-</a>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-<div style="position:absolute; top: 300px; left:90px;
-overflow: hidden; width: 112px; height:20px;color:000000; font-size:10pt; font-weight:bold; font-family:ARIAL NARROW; text-align:center; background-color:TRANSPARENT; background-image: url({URL_TO_IMAGE}  
-    ); background-position:center; background-repeat:no-repeat; border:1px solid TRANSPARENT; "> 
-<div class="twitter"><form method="twitter" action=""><a href="https://twitter.com/SarahSlurpie">
-TwiTTER
-</a>
-</div>
-</div>
-
-
-<div style="position:absolute; top: 330px; left:90px;
-overflow: hidden; width: 112px; height:20px;color:000000; font-size:10pt; font-weight:bold; font-family:ARIAL NARROW; text-align:center; background-color:TRANSPARENT; background-image: url({URL_TO_IMAGE}  
-    ); background-position:center; background-repeat:no-repeat; border:1px solid TRANSPARENT; "> 
-<div class="youtube"><form method="youtube" action=""><a href="https://www.youtube.com/channel/UClMfHYloCo-jjTYLiYs8cYw?view_as=subscriber">
-YoUTUbE
-</a>
-</div>
-</div>
-
-
-<div style="position:absolute; top: 360px; left:90px;
-overflow: hidden; width: 112px; height:20px;color:000000; font-size:10pt; font-weight:bold; font-family:ARIAL NARROW; text-align:center; background-color:TRANSPARENT; background-image: url({URL_TO_IMAGE}  
-    ); background-position:center; background-repeat:no-repeat; border:1px solid TRANSPARENT; "> 
-<div class="online"><form method="online" action=""><a href="https://www.facebook.com/SarahSlurpieOnline/">
-SaraHS Online
-</a>
-</div>
+</body>
+</html>
 
 
 
@@ -695,36 +332,6 @@ SaraHS Online
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-
-</div>
-
-
-
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-<div style="position:absolute; top: 1530px; left:500px;
-overflow: hidden; width: 352px; height:20px;color:000000; font-size:10pt; font-weight:bold; font-family:ARIAL NARROW; text-align:center; background-color:TRANSPARENT; background-image: url({URL_TO_IMAGE}  
-    ); background-position:center; background-repeat:no-repeat; border:1px solid TRANSPARENT; "> 
-<div class="instagram"><form method="instagram" action="">
- © 2019. Sarah Slurpie<br>
- suck it xoxo</br>
-</a>
-
-
-
-</div>
-</div>
    
